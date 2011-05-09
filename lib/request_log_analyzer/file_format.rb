@@ -2,6 +2,7 @@ module RequestLogAnalyzer::FileFormat
 
   autoload :Rails,            'request_log_analyzer/file_format/rails'
   autoload :Rails3,           'request_log_analyzer/file_format/rails3'
+  autoload :Rails3NoQuery,    'request_log_analyzer/file_format/rails3_no_query'
   autoload :RailsDevelopment, 'request_log_analyzer/file_format/rails_development'
   autoload :Oink,             'request_log_analyzer/file_format/oink'
   autoload :Rack,             'request_log_analyzer/file_format/rack'
@@ -15,6 +16,7 @@ module RequestLogAnalyzer::FileFormat
   autoload :AmazonS3,         'request_log_analyzer/file_format/amazon_s3'
   autoload :W3c,              'request_log_analyzer/file_format/w3c'
   autoload :Haproxy,          'request_log_analyzer/file_format/haproxy'
+  autoload :HaproxyNoQuery,   'request_log_analyzer/file_format/haproxy_no_query'
 
   # Loads a FileFormat::Base subclass instance.
   # You can provide:
